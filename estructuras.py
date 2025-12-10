@@ -60,3 +60,27 @@ print("\nElementos en el Diccionario:")
 for clave in diccionario_persona:
     print(clave, "->", diccionario_persona[clave])
 
+
+"""
+MODIFICAR ESTRUCTURAS
+"""
+#Agrega nuevo elemento a la lista
+lista_fruta.append("kiwi")
+print("\nLista despues de agregar elemento:", lista_fruta)
+#Agregar nuevo elemento al conjunto
+conjunto_colores.add("amarillo")
+print("Conjunto despues de agregar un elemento:", conjunto_colores)
+#Borrar un elemento de la lista
+lista_fruta.remove("pera")
+print("Lista despues de borrar 'pera':", lista_fruta)
+#Agregar una nueva clave al diccionario
+diccionario_persona["profesion"] = "ingeniero"
+print("Diccionario despues de agregar una nueva clave:", diccionario_persona)
+#Intentar modificar la tupla
+print("\nIntentando modificar la tupla...")
+
+try:
+    tupla_numeros[0] = 99
+except TypeError:
+    print("No se puede modificar una tupla. Las tuplas son inmutables y no cambian.")
+    
