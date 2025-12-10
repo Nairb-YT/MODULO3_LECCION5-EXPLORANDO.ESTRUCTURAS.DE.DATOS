@@ -31,3 +31,32 @@ print("Nombre dentro del diccionario:", diccionario_persona["nombre"])
 #No se puede acceder por indice a un set porque NO tiene orden fijo.
 #Si intentas conjunto_colores[0], dara error.
 
+
+"""
+3.- CONTAR E ITERAR
+"""
+#Mostrar cantidad de elementos en cada estructura con len()
+print("\nCantidad en la lista:", len(lista_fruta))
+print("Cantidad en la tupla:", len(tupla_numeros))
+print("Cantidad en el conjunto:", len(conjunto_colores))
+print("Cantidad en el diccionario:", len(diccionario_persona))
+#iterar lista
+print("\nElementos en la lista:")
+for fruta in lista_fruta:
+    print(fruta)
+
+#Iterar tupla
+print("\nElementos en la tupla:")
+for numero in tupla_numeros:
+    print(numero)
+
+#Iterar Conjunto
+print("\nElemntos en el conjunto(El orden puede cambiar):")
+for color in conjunto_colores:
+    print(color)
+
+#Iterar Diccionario
+print("\nElementos en el Diccionario:")
+for clave in diccionario_persona:
+    print(clave, "->", diccionario_persona[clave])
+
