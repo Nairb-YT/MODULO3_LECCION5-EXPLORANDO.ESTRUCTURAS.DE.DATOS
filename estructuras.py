@@ -1,5 +1,5 @@
 """
-CREAR ESTRUCTURAS
+1.- CREAR ESTRUCTURAS
 """
 #Lista con 3 elementos. Las listas Si pueden modificarse.
 lista_fruta = ["manzanas", "pera", "platano"]
@@ -18,4 +18,16 @@ print ("diccionario:", diccionario_persona)
 #Explicacion simple de su diferencia principal
 print("\nDiferencia principal: La lista se puede modificar, la tupla no."
       "El conjunto no tiene orden y el diccionario usa claves para identificar valores.")
+
+
+"""
+2.- ACCEDER A ELEMENTOS
+"""
+#Mostrar cantidad de elementos en cada estructura con len()
+print("\nSegundo elemento de la lista:", lista_fruta[1])
+#Imprimir una clave y sus valores desde el diccionario
+print("Nombre dentro del diccionario:", diccionario_persona["nombre"])
+#Explicacion sobre los set
+#No se puede acceder por indice a un set porque NO tiene orden fijo.
+#Si intentas conjunto_colores[0], dara error.
 
